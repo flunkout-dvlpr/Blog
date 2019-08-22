@@ -6,17 +6,17 @@ description: > # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+site-twitter: https://twitter.com/flunkout_dvlpr #if your site has a twitter account, enter it here
 
 # Author Settings
-author: David Freeman # add your name
+author: Julio C. Gonzalez # add your name
 author-img: david-freeman.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
-social-twitter: # add your Twitter handle
+about-author: From flunkout to fullstack developer! # add description
+social-twitter: flunkout_dvlpr # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+social-github: flunkout-dvlpr # add your Github handle
+social-linkedin: julio-gonzalez-4b2904b0 # add your Linkedin handle
+social-email: info@juliogonzalez.space # add your Email address
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
