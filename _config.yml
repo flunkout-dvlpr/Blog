@@ -1,4 +1,4 @@
-title: Hello, world! I'm David Freeman
+title: Hello, world! I'm Julio
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -10,8 +10,8 @@ site-twitter: https://twitter.com/flunkout_dvlpr #if your site has a twitter acc
 
 # Author Settings
 author: Julio C. Gonzalez # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: From flunkout to fullstack developer! # add description
+author-img: DEF92FE3-E462-4561-8BC9-3ACAF0E38C80.JPG # add your photo
+about-author: flunkout to fullstack developer! # add description
 social-twitter: flunkout_dvlpr # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: flunkout-dvlpr # add your Github handle
@@ -19,7 +19,7 @@ social-linkedin: julio-gonzalez-4b2904b0 # add your Linkedin handle
 social-email: info@juliogonzalez.space # add your Email address
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: flunkout-dvlpr # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
@@ -30,6 +30,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+
+
 
 paginate: 8
 paginate_path: "/page/:num"

@@ -1,0 +1,216 @@
+I"�7<dl>
+  <dt><strong><em>Functions :</em></strong></dt>
+  <dd>compound statements that can take input/execute instructions/return an output<br />
+Allow to encapsulate functionality for reuse</dd>
+  <dt><strong><em>Convention :</em></strong></dt>
+  <dd>An agreed way of doing things</dd>
+  <dt><strong><em>Calling :</em></strong></dt>
+  <dd>Giving a function the input(parameters) it requires to execute the instructions(code) and return it’s output</dd>
+  <dt><strong><em>Parameter :</em></strong></dt>
+  <dd>An input to a function, a function can have one/multiple/no parameters</dd>
+  <dt><strong><em>Return :</em></strong></dt>
+  <dd>The value a function outputs when you call it, return statement optional</dd>
+  <dt><strong><em>Passing :</em></strong></dt>
+  <dd>The action of passing a parameter to a function</dd>
+  <dt><code class="highlighter-rouge">def</code> :</dt>
+  <dd>Keyword used in python to define a function, specifying the function name/parameters/instructions/return</dd>
+  <dt><strong><em>Function naming convention :</em></strong></dt>
+  <dd>No capital letters, words separated by underscore _</dd>
+</dl>
+
+<p>Simple function that adds 5 to X, the parameter passed</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">5</span> 
+
+<span class="n">add_five</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">add_five</span><span class="p">)</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Built-In-Functions :</em></strong></dt>
+  <dd>a library of functions built into the programming language</dd>
+  <dt><code class="highlighter-rouge">len()</code> :</dt>
+  <dd>takes object and returns its length</dd>
+  <dt><code class="highlighter-rouge">str()</code> :</dt>
+  <dd>takes object and returns new object with a str/string data type  (object passed must be able to convert to type)</dd>
+  <dt><code class="highlighter-rouge">int()</code> :</dt>
+  <dd>takes object and returns new object with a int/integer data type (object passed must be able to convert to type)</dd>
+  <dt><code class="highlighter-rouge">float()</code> :</dt>
+  <dd>takes object and returns new object with a float data type       (object passed must be able to convert to type)</dd>
+  <dt><code class="highlighter-rouge">input()</code> :</dt>
+  <dd>takes a string as parameters, displays string on terminal, stores terminal response provided  as str/string</dd>
+</dl>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">todays_date</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"What is todays digit date: "</span><span class="p">)</span>
+<span class="n">todays_date_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">todays_date</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">todays_date_int</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">todays_date_int</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"Midway through the month!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"The month is just getting started!"</span><span class="p">)</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Required Parameters :</em></strong></dt>
+  <dd>required parameters by defined function</dd>
+  <dt><strong><em>Optional Parameters :</em></strong></dt>
+  <dd>function parameters that are optional. If parameter not passed, default value is used</dd>
+</dl>
+
+<p>Function using required and optional parameters</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">add_some</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">add_some</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">add_some</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Scope :</em></strong></dt>
+  <dd>a variable scope refers to what part of the program can read/write to it</dd>
+  <dt><strong><em>Global Scope :</em></strong></dt>
+  <dd>Variable defined outside a function/class</dd>
+  <dt><strong><em>Global Variable :</em></strong></dt>
+  <dd>variable that can be read/written to from anywhere in the program</dd>
+  <dt><strong><em>Local Scope :</em></strong></dt>
+  <dd>Variable defined within a function or class
+<code class="highlighter-rouge">global</code> :</dd>
+  <dd>
+    <p>Keyword required to write to a global variable from within a local scope</p>
+  </dd>
+</dl>
+
+<p>Function updating global variable using <code class="highlighter-rouge">global</code> keyword</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+	<span class="k">global</span> <span class="n">x</span> 
+	<span class="n">x</span> <span class="o">+=</span> <span class="mi">100</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">f</span><span class="p">()</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Exception Handling :</em></strong></dt>
+  <dd>allows to test for error conditions <br />
+“catch” exceptions if they occur and determine how to proceed</dd>
+  <dt><strong><em>try/catch :</em></strong></dt>
+  <dd>Keywords used to for exception handling</dd>
+</dl>
+
+<p><strong>NOTE : Do not use defined variables within try statement in except statement, exception could be raised before variable is defined</strong></p>
+
+<p>Try/catch statement to handle zero division error</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">n</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter numerator: "</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter denominator: "</span><span class="p">)</span>
+<span class="n">n_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">d_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">n_int</span><span class="o">/</span><span class="n">d_int</span><span class="p">)</span> 
+<span class="k">except</span> <span class="nb">ZeroDivisionError</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"denominator can't be 0"</span><span class="p">)</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Docstring :</em></strong></dt>
+  <dd>comment at top of function explaining what it does and the dataType each parameter needs to be</dd>
+</dl>
+
+<p>Function using docstring comment</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">add_some</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+	<span class="s">"""
+	Returns the addition of a and b 
+	:param x: int 
+	:param y: int
+	:return int sum of a and b
+	"""</span>
+	<span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">add_some</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span></code></pre></figure>
+
+<h1 id="challenges">CHALLENGES</h1>
+<ol>
+  <li>Write a function that takes a number as an input and returns the number squared</li>
+  <li>Create a function that accepts a string as a parameter and prints it</li>
+  <li>Write a function that takes three required parameters and two optional parameters</li>
+  <li>Write a program with two functions<br />
+First function should should take an integer as a parameters and divide it by 2
+Second function should should take an integer as a parameters and multiply the result by 4<br />
+Call the first function and store the results as a variable, and pass it as a parameter to the second function</li>
+  <li>Write a function that converts a string to a float, Use exception handling to to catch the exception that can occur</li>
+  <li>Add docstrings to all the functions created</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#1
+</span><span class="k">def</span> <span class="nf">square_my_number</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="s">"""
+	Returns x squared 
+	:param x: int
+	:return: x multiplied by 2
+	"""</span>
+	<span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">square_my_number</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#2
+</span><span class="k">def</span> <span class="nf">print_my_string</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="s">"""
+	Prints x  
+	:param x: string
+	"""</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#3
+</span><span class="k">def</span> <span class="nf">required_and_optionals</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+	<span class="s">"""
+	Prints the addition of a b c d e 
+	:param a: int
+	:param b: int
+	:param c: int
+	:param d: int
+	:param e: int
+	"""</span>
+	<span class="n">total_addition</span>  <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span> <span class="o">+</span> <span class="n">d</span> <span class="o">+</span> <span class="n">e</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">total_addition</span><span class="p">)</span>
+
+<span class="n">required_and_optionals</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#4
+</span><span class="k">def</span> <span class="nf">split_my_int</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="s">"""
+	Returns takes x an divides by 2 
+	:param x: int
+	:return: x divided by 2 
+	"""</span>
+	<span class="k">return</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="k">def</span> <span class="nf">quad_my_int</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="s">"""
+	Returns x multiplied by 4
+	:param x: int
+	"""</span>
+	<span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">4</span>
+
+<span class="n">int_split</span> <span class="o">=</span> <span class="n">split_my_int</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">quad_int</span> <span class="o">=</span> <span class="n">quad_my_int</span><span class="p">(</span><span class="n">int_split</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">quad_int</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#5 
+</span><span class="k">def</span> <span class="nf">my_str_to_float</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+	<span class="s">"""
+	Takes x as and returns it as dataType float
+	:param x: str
+	:return: string converted to float 
+	"""</span>
+	<span class="k">try</span><span class="p">:</span> 
+		<span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	<span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="s">"Invalid Input"</span><span class="p">)</span>
+
+<span class="n">my_str_to_float</span><span class="p">(</span><span class="s">"1"</span><span class="p">)</span></code></pre></figure>
+
+:ET

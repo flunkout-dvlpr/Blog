@@ -1,0 +1,220 @@
+I"�C<dl>
+  <dt><strong><em>Methods :</em></strong></dt>
+  <dd>Functions closely associated to a given type of data<br />
+A method is called on an object</dd>
+</dl>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">"hello"</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"hello"</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"l"</span><span class="p">,</span> <span class="s">"1"</span><span class="p">))</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>List :</em></strong></dt>
+  <dd>A container that stores objects in a specific order <br />
+Represented by brackets <br />
+Can store any data type, is mutable</dd>
+</dl>
+
+<p>There a two syntaxes to create a list</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">fruit</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="n">fruit</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fruit</span> <span class="o">=</span> <span class="p">[</span><span class="s">"orange"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"mango"</span><span class="p">]</span></code></pre></figure>
+
+<dl>
+  <dt><code class="highlighter-rouge">append()</code> :</dt>
+  <dd>Method used to add items to a list<br />
+Always adds to end of list</dd>
+</dl>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">fruit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"strawberry"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Iterable :</em></strong></dt>
+  <dd>An object is iterable when you can access each item using a loop <br />
+Each item has an index <br />
+A number representing it’s position</dd>
+  <dt><strong><em>Iterables :</em></strong></dt>
+  <dd>Objects that can be iterated, string/list/tuples</dd>
+</dl>
+
+<p><strong>NOTE : first item in a list always has an index of 0</strong><br />
+Retrieve item with its index</p>
+
+<p><code class="highlighter-rouge">print(fruit[0])</code></p>
+
+<dl>
+  <dt><strong><em>IndexError :</em></strong></dt>
+  <dd>Exception raised when when index accessed doesn’t exist</dd>
+  <dt><strong><em>Mutable :</em></strong></dt>
+  <dd>Container that can have items added or removed</dd>
+  <dt><strong><em>Immutable :</em></strong></dt>
+  <dd>Container that contents cannot be changed  (the characters in a string)</dd>
+  <dt><code class="highlighter-rouge">pop()</code> :</dt>
+  <dd>Method used to remove last element in a list</dd>
+</dl>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">fruit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">"watermelon"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">fruit</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span></code></pre></figure>
+
+<p>Combine lists using addition operator</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">,</span> <span class="s">'g'</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">list1</span> <span class="o">+</span> <span class="n">list2</span><span class="p">)</span></code></pre></figure>
+
+<p><em>Check if an item exists in a list using logical operator ‘in’</em><br />
+<em>Check if an item not in a list using logical operator ‘not in’</em></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'a'</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'a'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">list2</span><span class="p">)</span></code></pre></figure>
+
+<p>Get number of items in list using <code class="highlighter-rouge">len()</code> method</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span></code></pre></figure>
+
+<dl>
+  <dt><strong><em>Tuple :</em></strong></dt>
+  <dd>A container that stores objects in a specific order<br />
+Represented with parentheses <br />
+Is immutable(contents can’t change)</dd>
+</dl>
+
+<p>There a two syntaxes to create a tuple</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">colors</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">()</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">()</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">(</span><span class="s">"orange"</span><span class="p">,</span> <span class="s">"blue"</span><span class="p">,</span> <span class="s">"red"</span><span class="p">)</span></code></pre></figure>
+
+<p><strong>NOTE : Even if a tuple only has one item a comma is required after it</strong></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">one_item_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">"one item"</span><span class="p">,)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">one_item_tuple</span><span class="p">))</span></code></pre></figure>
+
+<p>Retrieve item with its index</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span></code></pre></figure>
+
+<p><em>Check if an item exists in a tuple using logical operator ‘in’</em><br />
+<em>Check if an item not in a tuple using logical operator ‘not in’</em></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'blue'</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'pink'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">)</span></code></pre></figure>
+
+<p><strong>NOTE: tuples are useful when dealing with values that will never change</strong></p>
+
+<dl>
+  <dt><strong><em>Dictionaries :</em></strong></dt>
+  <dd>Container for storing objects, used to link one object(Key) to another object(Value). <br />
+Resulting in a key-value pair<br />
+Are mutable<br />
+Not stored in specific order  <br />
+Represented with curly brackets</dd>
+  <dt><strong><em>Mapping :</em></strong></dt>
+  <dd>Linking one object to another</dd>
+  <dt><strong><em>key-value pair :</em></strong></dt>
+  <dd><code class="highlighter-rouge">{key : value}</code></dd>
+</dl>
+
+<p><strong>NOTE : keys can be looked-up in dictionaries to get value, but values cannot be used to lookup keys</strong><br />
+There a two syntaxes to create a dict</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">my_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="n">my_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">fruit_colors</span> <span class="o">=</span> <span class="p">{</span><span class="s">'banana'</span> <span class="p">:</span> <span class="s">'yellow'</span><span class="p">,</span>
+		<span class="s">'strawberry'</span> <span class="p">:</span> <span class="s">'red'</span><span class="p">,</span>
+		<span class="s">'grape'</span> <span class="p">:</span> <span class="s">'purple'</span> <span class="p">}</span></code></pre></figure>
+
+<p>Add values to dict with <code class="highlighter-rouge">dictName[Key] = value</code></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">fruit_colors</span><span class="p">[</span><span class="s">'pear'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'green'</span></code></pre></figure>
+
+<p><strong>NOTE: any object can be a dict Value, but a dict Key must be immutable</strong><br />
+<em>Check if a Key exists in a dict using logical operator ‘in’     (cannot be used to check for a Value)</em><br />
+<em>Check if a Key is not in a dict using logical operator ‘not in’ (cannot be used to check for a Value)</em></p>
+
+<dl>
+  <dt><code class="highlighter-rouge">del</code> :</dt>
+  <dd>keyword used to delete a key-value pair form a dict</dd>
+</dl>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">fruit_colors</span><span class="p">)</span>
+
+<span class="k">del</span> <span class="n">fruit_colors</span><span class="p">[</span><span class="s">'banana'</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">fruit_colors</span><span class="p">)</span></code></pre></figure>
+
+<p>Store lists in other lists</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">lists</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s">"pear"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"mango"</span><span class="p">]</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s">'green'</span><span class="p">,</span> <span class="s">'yellow'</span><span class="p">,</span> <span class="s">'yellow-orange'</span><span class="p">]</span> 
+<span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="s">'square'</span><span class="p">,</span> <span class="s">'circle'</span><span class="p">,</span> <span class="s">'triangle'</span><span class="p">]</span>
+
+<span class="n">lists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+<span class="n">lists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+<span class="n">lists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">shapes</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lists</span><span class="p">)</span></code></pre></figure>
+
+<p>Appending an item to one of the original lists will also update the list containing all lists</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">furits</span> <span class="o">=</span> <span class="n">lists</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">furits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">"watermelon"</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">furits</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">lists</span><span class="p">)</span></code></pre></figure>
+
+<p>Store tuples in lists</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">locations</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">la</span> <span class="o">=</span> <span class="p">(</span><span class="mf">34.22</span><span class="p">,</span> <span class="mf">188.24</span><span class="p">)</span>
+<span class="n">chicago</span> <span class="o">=</span> <span class="p">(</span><span class="mf">41.81</span><span class="p">,</span> <span class="mf">87.62</span><span class="p">)</span>
+
+<span class="n">locations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
+<span class="n">locations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chicago</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">locations</span><span class="p">)</span></code></pre></figure>
+
+<h1 id="challenges">CHALLENGES</h1>
+
+<ol>
+  <li>Create a list of your favorite musicians</li>
+  <li>Create a list of tuples, with each tuple containing the longitude and latitude of somewhere you’ve visited.</li>
+  <li>Create a dictionary that contains different attributes about you</li>
+  <li>Write a program that lets the user ask your attributes and returns the result from the dictionary you created</li>
+  <li>Create a dictionary mapping your favorite musicians to a list of your favorite songs by them</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#1
+</span><span class="n">my_favorite_rappers</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Kendrick Lamar"</span><span class="p">,</span> <span class="s">"Drake"</span><span class="p">,</span> <span class="s">"Meek Mill"</span><span class="p">]</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#2
+</span><span class="n">palces_visited</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="mf">29.7604</span><span class="p">,</span> <span class="mf">95.3698</span><span class="p">),</span> <span class="p">(</span><span class="mf">30.2672</span><span class="p">,</span> <span class="mf">97.7431</span><span class="p">),</span> <span class="p">(</span><span class="mf">32.7767</span><span class="p">,</span> <span class="mf">96.7970</span><span class="p">)]</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#3
+</span><span class="n">my_attributes</span> <span class="o">=</span> <span class="p">{</span><span class="s">'name'</span><span class="p">:</span> <span class="s">'Julio'</span><span class="p">,</span>
+				 <span class="s">'age'</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+				 <span class="s">'gender'</span><span class="p">:</span> <span class="s">'male'</span><span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#4
+</span><span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter which attribute to display: name, age or gender "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">answer</span> <span class="ow">in</span> <span class="n">my_attributes</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">my_attributes</span><span class="p">[</span><span class="n">answer</span><span class="p">]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#5
+</span><span class="n">my_favorite_songs</span> <span class="o">=</span> <span class="p">{</span><span class="s">'Kendrick'</span><span class="p">:</span> <span class="p">[</span><span class="s">'I'</span><span class="p">,</span> <span class="s">'Good Kid Mad City'</span><span class="p">],</span>
+					<span class="s">'J.Cole'</span><span class="p">:</span> <span class="p">[</span><span class="s">'Djavu'</span><span class="p">,</span> <span class="s">'Young Simba'</span><span class="p">],</span>
+					<span class="s">'Drake'</span><span class="p">:</span> <span class="p">[</span><span class="s">'Too Much'</span><span class="p">,</span> <span class="s">'305 In My City'</span><span class="p">]}</span></code></pre></figure>
+
+:ET
