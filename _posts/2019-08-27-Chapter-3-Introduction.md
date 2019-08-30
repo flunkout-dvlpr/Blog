@@ -28,7 +28,9 @@ for i in range(100):
 ***Comment :*** 
 : Explains what a line of code does, something that is not obvious. Use comments sparingly not en every line   
 ***Keywords :*** 
-: Words with special meanings within a language
+: Words with special meanings within 
+
+a language
 
 {% highlight python %}
 print\
@@ -115,6 +117,8 @@ a_div = 13 / 2.5
 
 
 print(a_div)
+
+
 
 #Operands: a value on either side of an operator 
 #Expression: Two operands and an operator make up an expression
