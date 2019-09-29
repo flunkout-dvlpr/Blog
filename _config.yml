@@ -11,7 +11,11 @@ site-twitter: https://twitter.com/flunkout_dvlpr #if your site has a twitter acc
 # Author Settings
 author: Julio C. Gonzalez # add your name
 author-img: DEF92FE3-E462-4561-8BC9-3ACAF0E38C80.JPG # add your photo
-about-author: flunkout to fullstack developer! Stay Hungry Stay Foolish # add description
+
+about-author: >
+  flunkout to fullstack developer!    
+  Stay Hungry Stay Foolish 
+
 social-twitter: flunkout_dvlpr # add your Twitter handle
 social-instagram: flunkout_dvlpr # add your instagram  handle
 social-github: flunkout-dvlpr # add your Github handle
