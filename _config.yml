@@ -1,4 +1,4 @@
-title: Hello, world! I'm Julio
+title: flunkout-dvlpr 
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -11,9 +11,9 @@ site-twitter: https://twitter.com/flunkout_dvlpr #if your site has a twitter acc
 # Author Settings
 author: Julio C. Gonzalez # add your name
 author-img: DEF92FE3-E462-4561-8BC9-3ACAF0E38C80.JPG # add your photo
-about-author: flunkout to fullstack developer! # add description
+about-author: flunkout to fullstack developer! Stay Hungry Stay Foolish # add description
 social-twitter: flunkout_dvlpr # add your Twitter handle
-social-facebook: # add your Facebook handle
+social-instagram: flunkout_dvlpr # add your instagram  handle
 social-github: flunkout-dvlpr # add your Github handle
 social-linkedin: julio-gonzalez-4b2904b0 # add your Linkedin handle
 social-email: info@juliogonzalez.space # add your Email address
