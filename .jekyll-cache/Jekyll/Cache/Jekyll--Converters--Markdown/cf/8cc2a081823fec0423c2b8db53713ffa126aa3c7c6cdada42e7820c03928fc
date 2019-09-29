@@ -1,0 +1,9 @@
+I"�<h3 id="triple-strings-strings-longer-than-a-single-line-require--triple-quotes">Triple Strings: strings longer than a single line require “”” triple quotes</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">triple_string</span> <span class="o">=</span> <span class="s">"""THIS
+IS A 
+TRIPPLE STRING
+"""</span>
+
+<span class="n">my_name</span> <span class="o">=</span> <span class="s">"Julio"</span></code></pre></figure>
+:ET

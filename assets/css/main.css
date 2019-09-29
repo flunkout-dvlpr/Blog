@@ -775,7 +775,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  background-color: #747578; /* fbfbfb */
+  background-color: #E1E1E1; /* 747578 fbfbfb */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -787,7 +787,7 @@ h1 {
 
 img {
   max-width: 100%;
-  vertical-align: middle;
+  vertical-align: middle; /* middle*/
   display: inline-block;
 }
 
