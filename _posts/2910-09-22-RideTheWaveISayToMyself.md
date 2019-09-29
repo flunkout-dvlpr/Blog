@@ -2,12 +2,13 @@
 layout: post
 title: Just, ride the wave, I say to myself
 date: 2019-09-22 14:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: Test a description 
 img: GoldenRatioSmall.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Personal]
+tags: [Personal Development]
 ---
-
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This past weekend I watched [Decoding Bill Gates](https://www.netflix.com/title/80184771?source=35), a new *'docuseries'* on Netflix. I've always enjoyed listening/watching/reading anything related to creators and their early beginnings but after finishing up the series I was left with mixed emotions, and for lack of better words, ***it really fucked me up mentally!*** After some reflecting throughout this week, I started to understand and unpack, it wasn't the content it's self that overwhelmed me but more so the point in life at which I am currently at. The many other times I've watched this sort of thing, It's always been form a POV of "I can't wait to get there one day" but this weekend it dawned on me that I am no longer on the "other side", this is it, the 'day' is here, and well it feels as if I am not up to par. I'll explain: 
 
 > “When you’re young, your potential is infinite. You might do anything, really. You might be Einstein, you might be DiMaggio. Then you get to an age when what you might be gives way to what you have been. You weren’t Einstein. You weren’t anything. That’s a bad moment.” --Confessions of a Dangerous Mind
@@ -50,3 +51,9 @@ This is something I've been meaning to write, really since I dropped out, but wh
 
 <p align="center"><iframe width="100%" height="50" src="https://www.youtube.com/embed/_IGl8Mah_0I?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="false"></iframe></p>>
 {: style="text-align: center"}
+
+
+
+{% for tag in tags %}
+      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+{% endfor %}

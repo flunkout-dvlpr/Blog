@@ -1,0 +1,29 @@
+---
+layout: main
+---
+<div class="blog-tags">
+<h1>{{ page.tag }}</h1>
+<ul>
+{% for post in site.tags[page.tag] %}
+	<div class="tag-list">
+  		<span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> | {{ post.date | date_to_string }} <span>
+  		<br>
+    	<small><span>{{ post.description }}</span></small>
+ 	<div>
+{% endfor %}
+</ul>
+</div>
+<!-- <div>
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:',' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <a href="{{ site.baseurl }}/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+{% endfor %}
+</div>
+ -->
