@@ -5,7 +5,7 @@ yarn.lock
 Gemfile.lock
 package-lock.json
 node_modules/
-
+drafts
 ### macOS ###
 *.DS_Store
 .AppleDouble
