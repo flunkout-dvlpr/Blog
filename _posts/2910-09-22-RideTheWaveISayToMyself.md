@@ -34,6 +34,7 @@ This had been much easier to pull off before for several reasons, the circumstan
 > You take a loss? Shit, don't cry about it, just embrace it
 Minor setback for major comeback, that's my favorite  
 --Kendrick Lamar
+{: style="text-align: center"}
 
 This is something I've been meaning to write, really since I dropped out, but whether it was because I felt ashamed or insecure I never published it. Being able to look back I never imagined this would be the outcome, this entire journey(which barley begins) has showed me that the ability to accomplish anything lies within the path that I allow myself to create. More importantly it has given me the courage and strength to embrace the failures to come(which I hope are a lot).
 {: style="text-align: center"}
