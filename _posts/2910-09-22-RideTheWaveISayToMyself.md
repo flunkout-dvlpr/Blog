@@ -54,4 +54,4 @@ This is something I've been meaning to write, really since I dropped out, but wh
 {: style="text-align: center"}
 
 ps. I am extremely sorry for all the grammatical errors and just plain broken English, if you find anything wrong please don't hesitate to comment below! Thank you for taking the time to read my stuff!!!
-
+{: style="text-align: center"}
