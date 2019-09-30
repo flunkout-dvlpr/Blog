@@ -2,7 +2,7 @@
 layout: post
 title: Just, ride the wave, I say to myself
 date: 2019-09-22 14:00:00 +0300
-description: Test a description 
+description: Where I am at and where I want to be 
 img: GoldenRatioSmall.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Personal Development]
