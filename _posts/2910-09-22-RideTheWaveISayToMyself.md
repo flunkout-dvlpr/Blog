@@ -52,9 +52,3 @@ This is something I've been meaning to write, really since I dropped out, but wh
 
 <p align="center"><iframe width="100%" height="50" src="https://www.youtube.com/embed/_IGl8Mah_0I?start=143" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="false"></iframe></p>>
 {: style="text-align: center"}
-
-
-
-{% for tag in tags %}
-      <a href="#{{ tag | slugify }}"> {{ tag }} </a>
-{% endfor %}
