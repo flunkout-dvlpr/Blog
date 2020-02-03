@@ -36,6 +36,10 @@ section {
   display: block;
 }
 
+
+nav {
+  color: #F1F3CE;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -98,6 +102,7 @@ pre {
  */
 a {
   background-color: transparent;
+  color: #6FB98F;
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
@@ -437,7 +442,7 @@ template {
 }
 
 .highlight {
-  background-color: #faf9f9;
+  background-color: #1C0221;  /* faf9f9 */
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
@@ -774,8 +779,8 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #515151;
-  background-color: #E1E1E1; /* 747578 fbfbfb */
+  color: #515151; /*  515151 */
+  background-color: #193032; /*  E1E1E1 747578 fbfbfb */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -827,7 +832,7 @@ pre code {
 }
 
 table {
-  border: 1px solid #aaa;
+  border: 1px solid #4f4f4f;
   background-color: #eee;
   width: 100%;
   text-align: left;
@@ -835,7 +840,7 @@ table {
 }
 
 table td, table.blueTable th {
-  border: 1px solid #aaa;
+  border: 1px solid #4f4f4f;
   padding: 3px 2px;
 }
 
@@ -844,7 +849,7 @@ table tbody td {
 }
 
 table tr:nth-child(even) {
-  background: #adbecc;
+  background: #b5b5b5;
 }
 
 table thead {
@@ -889,17 +894,19 @@ table tfoot td {
 }
 
 .post, .article-page {
-  background-color: #fff; /* fff */
+  background-color: #004445; /* fff */
+  color: #F1F3CE;
+  box-shadow: 8px 8px 500px #021719;
 }
 
 ::-moz-selection {
   background: rgba(38, 57, 89, 0.8);
-  color: #ffffff;
+  color: #F1F3CE;
 }
 
 ::selection {
   background: rgba(38, 57, 89, 0.8);
-  color: #ffffff;
+  color: #F1F3CE;
 }
 
 .clearfix::before, .clearfix::after {
@@ -933,7 +940,8 @@ table tfoot td {
   width: 240px;
   height: 100%;
   padding: 20px 10px;
-  background-color: #ffffff;
+  background-color: #2C7873; /* F1F3CE */
+  color: #F1F3CE;
 }
 
 .about {
@@ -948,7 +956,7 @@ table tfoot td {
   -webkit-border-radius: 100%;
           border-radius: 100%;
   overflow: hidden;
-  background-color: #333030;
+  background-color: #6FB98F;
 }
 
 .about img {
@@ -975,7 +983,7 @@ table tfoot td {
   padding-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #333030;
+  color: #F1F3CE;
   font-weight: 700;
 }
 
@@ -1023,7 +1031,7 @@ table tfoot td {
 
 .contact .contact-title {
   position: relative;
-  color: #333030;
+  color: #F1F3CE;
   font-weight: 400;
   font-size: 12px;
   margin: 0 0 5px;
@@ -1043,7 +1051,7 @@ table tfoot td {
   position: absolute;
   top: 50%;
   left: 0;
-  background-color: #515151;
+  background-color: #F1F3CE;
 }
 
 .contact .contact-title::after {
@@ -1058,7 +1066,7 @@ table tfoot td {
   position: absolute;
   top: 50%;
   right: 0;
-  background-color: #515151;
+  background-color: #F1F3CE;
 }
 
 .contact ul {
@@ -1078,7 +1086,7 @@ table tfoot td {
 }
 
 .contact ul li a {
-  color: #515151;
+  color: #F1F3CE;
   display: block;
   padding: 5px;
   font-size: 18px;
@@ -1126,6 +1134,8 @@ footer .copyright {
   transition: all .3s ease;
   -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
           box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+          box-shadow: 4px 4px 10px #021719;
+
 }
 
 .post:hover {
@@ -1134,6 +1144,7 @@ footer .copyright {
           transform: translate(0px, -2px);
   -webkit-box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
           box-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
+          box-shadow: 5px 5px 40px #021719;
 }
 
 .post .post-thumbnail {
@@ -1164,7 +1175,7 @@ footer .copyright {
 .post .post-content .post-title a {
   font-family: 'PT Serif', serif;
   text-decoration: none;
-  color: #263959;
+  color: #6FB98F; /*263959*/
 }
 
 .post .post-content p {
@@ -1309,7 +1320,7 @@ a.newer-posts:hover {
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #F1F3CE;
   padding: 0 20px 20px;
 }
 
@@ -1408,7 +1419,7 @@ a.newer-posts:hover {
             justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #F1F3CE;
     -webkit-box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
