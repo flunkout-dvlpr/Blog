@@ -3,7 +3,7 @@ layout: post
 title: Used to be feelin' depressed, <br> Now that I'm living I'm a little obsessed!
 date: 2020-02-27 21:00:00 +0300
 description: 
-img: SpotifyAPI_BG.jpg # Add image post (optional)
+img: yingyangBG.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Personal Development]
 ---
